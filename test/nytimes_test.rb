@@ -14,7 +14,7 @@ class NytimesTest < Minitest::Test
     #Set your code to the local variable, "result"
 
     result = hash[:copyright]
-    assert result, "Copyright (c) 2018 The New York Times Company. All Rights Reserved."
+    assert_equal result, "Copyright (c) 2018 The New York Times Company. All Rights Reserved."
   end
 
   def test_it_can_get_array_of_stories
